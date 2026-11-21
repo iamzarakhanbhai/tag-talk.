@@ -37,3 +37,30 @@
 .spotlight-footer{position:relative;left:auto;right:auto;bottom:auto;grid-area:footer;margin-top:18px}
 @media(max-width:850px){.spotlight-stage{grid-template-columns:minmax(0,1fr) minmax(0,.8fr);min-height:0;gap:24px}.spotlight-title h2{font-size:clamp(28px,4.5vw,44px)}.spotlight-cutout{width:min(100%,290px);margin:0 12px 25px 0}.spotlight-dossier{width:100%}}
 @media(max-width:600px){.spotlight-stage{grid-template-columns:minmax(0,1fr);grid-template-areas:"title" "art" "copy" "footer";row-gap:25px;min-height:0;padding:0}.spotlight-title{left:auto;top:auto}.spotlight-title h2{font-size:clamp(30px,8vw,42px)}.spotlight-cutout{top:auto;left:auto;width:min(65vw,245px);margin:0 auto 15px}.spotlight-dossier{left:auto;bottom:auto;width:100%}.spotlight-dossier h3{font-size:21px}.spotlight-footer{left:auto;right:auto;bottom:auto;margin-top:4px}.spotlight-section{padding-bottom:75px}}
+
+/* People to watch — staggered editorial gallery */
+.creators-section{padding:100px 0 120px;background:var(--bg);overflow:hidden}
+.creators-intro{display:grid;grid-template-columns:1fr 270px;align-items:end;gap:24px;margin-bottom:56px}
+.creators-eyebrow{grid-column:1/-1;font-size:11px;letter-spacing:.16em;color:var(--apple)}
+.creators-intro h2{font-family:Unbounded,sans-serif;font-size:clamp(42px,6.2vw,90px);line-height:1.08;letter-spacing:-.065em;margin:0}
+.creators-intro h2 em{font-style:normal;color:var(--posie)}
+.creators-intro p{color:var(--muted);font-size:16px;line-height:1.6;margin:0 0 10px}
+.creators-gallery{display:grid;grid-template-columns:1.2fr .78fr .95fr;grid-template-areas:"emma karina karina" "emma alix dina";gap:46px 34px;align-items:start}
+.creator-person{display:block;min-width:0;text-decoration:none;color:var(--text)}
+.creator-emma{grid-area:emma}.creator-karina{grid-area:karina;max-width:410px;justify-self:end;width:100%}.creator-alix{grid-area:alix;margin-top:32px}.creator-dina{grid-area:dina;margin-top:-26px}
+.creator-portrait{position:relative;display:flex;align-items:center;justify-content:center;overflow:hidden;aspect-ratio:4/5;background:#631724;transition:transform .3s ease}
+.creator-person:hover .creator-portrait{transform:translateY(-7px)}
+.creator-emma .creator-portrait{aspect-ratio:3/4;background:#a4bd56;color:#111}
+.creator-karina .creator-portrait{aspect-ratio:1.45;background:#c5688a;color:#111}
+.creator-alix .creator-portrait{aspect-ratio:4/4.7;background:#292027}
+.creator-dina .creator-portrait{aspect-ratio:4/5;background:#b9b5b2;color:#631724}
+.creator-monogram{font-family:Unbounded,sans-serif;font-size:clamp(48px,8vw,120px);font-weight:800;letter-spacing:-.11em;transform:rotate(-10deg);opacity:.85}
+.creator-country{position:absolute;bottom:16px;left:17px;font:600 11px Onest,sans-serif;letter-spacing:.13em}
+.creator-meta{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:end;gap:10px;margin-top:16px}
+.creator-meta h3{font-family:Unbounded,sans-serif;font-size:clamp(15px,1.6vw,23px);line-height:1.28;letter-spacing:-.04em;margin:0}
+.creator-meta>span{font:600 10px Onest,sans-serif;letter-spacing:.08em;color:var(--posie)}
+.creators-outro{display:flex;justify-content:space-between;gap:18px;align-items:center;margin-top:70px;padding-top:18px;border-top:1px solid var(--border)}
+.creators-outro>span{font-size:11px;letter-spacing:.1em;color:var(--muted)}
+.creators-outro a{font:600 12px Unbounded,sans-serif;color:var(--apple);text-decoration:none}
+@media(max-width:850px){.creators-gallery{grid-template-columns:1fr 1fr;grid-template-areas:"emma karina" "alix dina";gap:35px 24px}.creator-karina{max-width:none}.creator-karina .creator-portrait{aspect-ratio:4/5}.creator-alix,.creator-dina{margin-top:0}.creators-intro{grid-template-columns:1fr 200px}}
+@media(max-width:600px){.creators-section{padding:70px 0 80px}.creators-intro{display:block;margin-bottom:35px}.creators-intro h2{font-size:clamp(37px,10vw,56px);margin:16px 0}.creators-intro p{max-width:290px;font-size:14px}.creators-gallery{gap:32px 14px}.creator-meta h3{font-size:clamp(11px,3vw,16px)}.creator-meta>span{font-size:9px}.creator-monogram{font-size:clamp(42px,12vw,70px)}.creators-outro{margin-top:48px}.creators-outro>span{max-width:140px;font-size:9px}.creators-outro a{font-size:10px}}

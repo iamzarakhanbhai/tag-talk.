@@ -151,7 +151,7 @@
 #pickDots{letter-spacing:7px;color:var(--apple)}
 .feature-art{position:relative}
 .feature-dynamic{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;padding:30px;z-index:1;font:800 clamp(24px,3vw,46px)/1.3 Unbounded,sans-serif;letter-spacing:-.08em;text-align:center}
-.feature-photo-caption,.feature-sticker{position:relative;z-index:2}
+.feature-photo-caption{z-index:3}.feature-sticker{z-index:4}
 .feature-caption{cursor:pointer}
 .feature-changing{opacity:.65;transition:opacity .25s}
 .creator-profile-cover{height:270px;background:linear-gradient(120deg,var(--merlot),#292027);display:flex;justify-content:center;align-items:center;font:800 clamp(20px,4vw,48px) Unbounded,sans-serif;color:var(--posie);letter-spacing:-.06em;overflow:hidden}
